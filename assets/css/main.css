@@ -40,10 +40,13 @@ input {
 
 .logo {
     float: left;
-    display: inline-block;
+    display: flex;
 
 }
-
+.logo>img{
+    margin-left: 20px;
+    margin-top: 5px;
+}
 .logo__link {
     font-weight: bold;
     text-decoration: none;
@@ -241,6 +244,7 @@ input {
 .slogan2 > section:nth-of-type(2) {
     /*width: 50%;*/
     display: flex;
+
 }
 
 .slogan2 > section:nth-of-type(2) > p {
@@ -249,9 +253,10 @@ input {
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     .slogan2 {
         width: 100%;
+
     }
 
     .slogan2 > section:nth-of-type(2) {
@@ -265,13 +270,22 @@ input {
         direction: rtl;
         width: 100%;
     }
+
 }
 
 .slogan2 > section:nth-of-type(3) {
     display: flex;
     justify-content: space-between;
 }
+@media (max-width: 650px) {
+    .slogan2 > section:nth-of-type(3)>section:nth-of-type(2) {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+}
 .slogan2 > section:nth-of-type(3) > section:nth-of-type(1) {
     /*background: #4f2ad3;*/
     border-radius: 10px;
@@ -628,4 +642,23 @@ input {
 .hamyan-h2{
     text-align: center;
     margin-top: 70px;
+}
+@media (max-width: 800px) {
+    .hamyan{
+        width: 90%;
+        margin: 50px auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamyan>img{
+        margin-top: 20px;
+    }
+}
+.sal{
+    width: 90%;
+    /*background: #4f2ad3;*/
+    margin: 50px auto;
+text-align: center;
 }
